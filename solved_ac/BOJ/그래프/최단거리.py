@@ -1,5 +1,5 @@
 import sys
-from collections import deque
+from heapq import heapify, heappop, heappush
 
 V, E = map(int, sys.stdin.readline().strip().split())
 start = int(sys.stdin.readline().strip())
@@ -13,34 +13,26 @@ for e in range(E):
     else:
         distances[u][v] = w
 
-distanceFromStart = [0 for v in range(V + 1)]
+distanceFromStart = [1e9 for v in range(V + 1)]
 
-visited = [False for v in range(V + 1)]
+q = []
+heappush(q, (0, start))
+distanceFromStart[start] = 0
 
-queue = deque()
-queue.append((start, start))
-visited[start] = True
+while len(q) > 0:
+    distance, targetNode = heappop(q)
 
-while len(queue) > 0:
-    f, t = queue.popleft()
+    if distance > distanceFromStart[targetNode]:
+        continue
 
-    if f == t:
-        distanceFromStart[t] = 0
-    else:
-        if t not in distances[start]:
-            distanceFromStart[t] = distanceFromStart[f] + distances[f][t]
-        else:
-            distanceFromStart[t] = min(distanceFromStart[f] + distances[f][t], distances[start][t])
-
-    for k in distances[t]:
-        if not visited[k]:
-            visited[k] = True
-            queue.append((t, k))
+    for n in distances[targetNode]:
+        cost = distance + distances[targetNode][n]
+        if distanceFromStart[n] > cost:
+            distanceFromStart[n] = cost
+            heappush(q, (cost, n))
 
 for i in range(1, len(distanceFromStart)):
-    if distanceFromStart[i] > 0:
-        print(distanceFromStart[i])
-    elif i == start:
-        print(0)
+    if distanceFromStart[i] == 1e9:
+        print('INF')
     else:
-        print("INF")
+        print(distanceFromStart[i])
