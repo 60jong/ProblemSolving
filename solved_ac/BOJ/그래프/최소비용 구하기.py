@@ -8,6 +8,7 @@ graph = [[] for _ in range(N + 1)]
 for m in range(M):
     f, t, c = map(int, sys.stdin.readline().strip().split())
     graph[f].append((t, c))
+
 A, B = map(int, sys.stdin.readline().strip().split())
 
 distance = [1e9] * (N + 1)
