@@ -3,7 +3,7 @@ N = int(sys.stdin.readline())
 
 heights = [int(sys.stdin.readline()) for _ in range(N)]
 
-# (높이, 누적) 리스트
+# (높이, 누적) 연결리스트
 stack = []
 result = 0
 
