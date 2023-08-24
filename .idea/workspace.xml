@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4b688671-ce98-4149-803f-60dddba5a297" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solved_ac/BOJ/문자열폭발.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_ac/BOJ/스택/문자열폭발.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/solved_ac/BOJ/자료구조/옥상정원꾸미기.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_ac/BOJ/자료구조/옥상정원꾸미기.py" afterDir="false" />
-    </list>
+    <list default="true" id="4b688671-ce98-4149-803f-60dddba5a297" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -580,7 +576,7 @@
       <workItem from="1692612506683" duration="6130000" />
       <workItem from="1692755364042" duration="256000" />
       <workItem from="1692759866610" duration="2185000" />
-      <workItem from="1692763576686" duration="4803000" />
+      <workItem from="1692763576686" duration="5046000" />
     </task>
     <servers />
   </component>
