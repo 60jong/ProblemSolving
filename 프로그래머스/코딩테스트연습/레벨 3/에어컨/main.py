@@ -1,35 +1,29 @@
-stack = []
-dirs = [(-1, 0, 'u'), (0, 1, 'r'), (1, 0, 'd'), (0, -1, 'l')]
-visit_count = []
-answer = ''
-
-def func(stack, visit_count, N, M, R, C, K):
-    global answer
-    if len(stack) == K + 1:
-        if stack[-1][0] == R and stack[-1][1] == C:
-            route = ''.join(map(lambda x : x[2], stack))
-            answer = min(route, answer)
-        return
-
-    for d in dirs:
-        nx, ny = stack[-1][0] + d[0], stack[-1][1] + d[1]
-        if 1 <= nx <= N and 1 <= ny <= M and visit_count[nx][ny] > 0:
-            visit_count[nx][ny] = visit_count[nx][ny] - 1
-            stack.append((nx, ny, d[2]))
-
-            func(stack, visit_count, N, M, R, C, K)
-
-            visit_count[nx][ny] = visit_count[nx][ny] + 1
-            stack.pop()
+from collections import deque
 
 
 def solution(n, m, x, y, r, c, k):
-    global answer
+    dist = abs(x - r) + abs(y - c)
+    if k < dist or (k - dist) % 2 == 1: return 'impossible'
 
     answer = 'z' * k
-    visit_count = [[1 + (k - (abs(x - r) + abs(y - c))) // 2] * (m + 1) for _ in range(n + 1)]
-    stack = [(x, y, '')]
-    func(stack, visit_count, n, m, r, c, k)
+    dirs = [(1, 0, 'd'), (0, -1, 'l'), (0, 1, 'r'), (-1, 0, 'u')]
+
+    q = deque()
+    q.append((x, y, ''))
+    while q:
+        x, y, route = q.popleft()
+
+        if x == r and y == c and len(route) == k:
+            answer = min(answer, route)
+            continue
+
+        for d in dirs:
+            nx, ny = x + d[0], y + d[1]
+
+            if 1 <= nx <= n and 1 <= ny <= m:
+                if (k - len(route)) >= (abs(nx - r) + abs(ny - c)):
+                    q.append((nx, ny, route + d[2]))
+                    break
 
     return answer
 
