@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b688671-ce98-4149-803f-60dddba5a297" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/solved_ac/BOJ/정렬/merge-sort/mergesort.py" beforeDir="false" afterPath="$PROJECT_DIR$/solved_ac/BOJ/정렬/merge-sort/mergesort.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
       <recent name="C:\Users\s_rudwhd515\Programming\PS\practice\solved_ac\BOJ\분할정복" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.quicksort">
+  <component name="RunManager" selected="Python.mergesort">
     <configuration name="양과 늑대" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,28 +123,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/solved_ac/BOJ/그래프/union-find/집합의 표현.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="사이클게임" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="practice" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/solved_ac/BOJ/DFS" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\s_rudwhd515\Programming\PS\practice\solved_ac\BOJ\그래프\union-find\사이클게임.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -834,6 +813,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mergesort" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/solved_ac/BOJ/정렬/merge-sort" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/solved_ac/BOJ/정렬/merge-sort/mergesort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="prac" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -880,11 +881,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mergesort" />
         <item itemvalue="Python.quicksort" />
         <item itemvalue="Python.집합의 표현" />
         <item itemvalue="Python.사이클게임 (1)" />
         <item itemvalue="Python.prac" />
-        <item itemvalue="Python.사이클게임" />
       </list>
     </recent_temporary>
   </component>
@@ -1023,7 +1024,7 @@
       <workItem from="1695371243542" duration="40000" />
       <workItem from="1695371296413" duration="69000" />
       <workItem from="1695371376004" duration="4323000" />
-      <workItem from="1695553429731" duration="4098000" />
+      <workItem from="1695553429731" duration="8129000" />
     </task>
     <servers />
   </component>
@@ -1050,6 +1051,7 @@
     <SUITE FILE_PATH="coverage/practice$prac.coverage" NAME="prac Coverage Results" MODIFIED="1695371748164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/solved_ac/BOJ/그래프/union-find" />
     <SUITE FILE_PATH="coverage/practice$3.coverage" NAME="숨바꼭질3 Coverage Results" MODIFIED="1690554346090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/solved_ac/BOJ/BFS" />
     <SUITE FILE_PATH="coverage/practice$_dijkstra.coverage" NAME="등산코스-dijkstra Coverage Results" MODIFIED="1694013647271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/프로그래머스/코딩테스트연습/레벨 3" />
+    <SUITE FILE_PATH="coverage/practice$mergesort.coverage" NAME="mergesort Coverage Results" MODIFIED="1695572308489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/solved_ac/BOJ/정렬/merge-sort" />
     <SUITE FILE_PATH="coverage/practice$___.coverage" NAME="하노이 탑 이동 순서 Coverage Results" MODIFIED="1692953368217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/solved_ac/BOJ/재귀" />
     <SUITE FILE_PATH="coverage/practice$trace.coverage" NAME="trace Coverage Results" MODIFIED="1691470982910" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/solved_ac/BOJ" />
     <SUITE FILE_PATH="coverage/practice$_____5.coverage" NAME="가장 긴 증가하는 부분 수열 5 Coverage Results" MODIFIED="1691943028997" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/solved_ac/BOJ/이분탐색" />
