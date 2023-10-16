@@ -1,4 +1,4 @@
-N = 8
+N = input()
 idx = 1
 result = []
 s = []
@@ -16,6 +16,3 @@ for _ in range(8):
         while s[-1] < a:
             s.pop()
             result.append("-")
-
-
-
