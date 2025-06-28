@@ -1,4 +1,4 @@
-package dev.kingkj.djikstra.solvedac.party_1238;
+package dev._60jong.djikstra.solvedac.party_1238;
 
 import java.io.*;
 import java.util.*;

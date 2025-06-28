@@ -1,6 +1,5 @@
-package dev.kingkj.backtracking.programmers.kakao_select_dice;
+package dev._60jong.backtracking.programmers.kakao_select_dice;
 
-import java.io.*;
 import java.util.*;
 
 
